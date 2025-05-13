@@ -1,0 +1,7 @@
+*.csv
+autowhats.exe
+Automação.code-workspace
+contatos_geral.db
+build
+dist
+banco.py
