@@ -1,6 +1,6 @@
 # AutoWhats
 
-O **AutoWhats** é uma aplicação desenvolvida em Python com interface gráfica (Tkinter) para envio automatizado de mensagens via WhatsApp Web. A automação utiliza o Selenium WebDriver e permite gerenciar uma base de contatos localmente com SQLite, organizando-os por cidade e facilitando o envio em massa ou individual.
+O **AutoWhats** é uma aplicação desenvolvida em Python com interface gráfica (Tkinter) para envio automatizado de mensagens via WhatsApp Web. A automação utiliza o Selenium WebDriver e permite gerenciar uma base de contatos localmente com SQLite, organizando-os por cidade e facilitando o envio em massa, feito individualmente.
 
 ---
 
@@ -25,30 +25,36 @@ O **AutoWhats** é uma aplicação desenvolvida em Python com interface gráfica
    python autowhats.py
 
 
-## 🧩 Banco de Dados (contatos.db)
+## 🧩 Banco de Dados
 
-A base de dados utilizada é um arquivo SQLite chamado contatos.db. Se não existir, ele é automaticamente criado na primeira execução, contendo a tabela:
+A base de dados utilizada é um arquivo SQLite chamado ``contatos.db``. Se não existir, ele é automaticamente criado na primeira execução, contendo a tabela:
 
 ``sql``
 
 CREATE TABLE contatos (
+
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
     cidade TEXT,
+    
     nome TEXT,
+    
     telefone TEXT,
+    
     mensagem TEXT
+    
 );
 
 
 ## 📇 Formato dos Contatos
-Telefone: Deve estar no formato internacional sem espaços ou símbolos, por exemplo:
+### Telefone: Deve estar no formato internacional sem espaços ou símbolos, por exemplo:
 
 ✅ Correto: 5531999998888
 
 ❌ Incorreto: (31) 99999-8888
 
 
-Mensagem personalizada (opcional):
+### Mensagem personalizada (opcional):
 
 Ao adicionar um contato, você pode inserir uma mensagem única para ele.
 
@@ -105,12 +111,13 @@ O sistema abrirá uma conversa por vez no WhatsApp Web e enviará a mensagem (pa
 Ao finalizar todos os envios, o navegador será fechado automaticamente.
 
 
+
 ## 👨‍💻 Autor
 
 Desenvolvido por Lucas Costa
 
 🔗 [LinkedIn](https://www.linkedin.com/in/lucas-de-freitas-costa/)
 
-##📄 Licença
+## 📄 Licença
 
 Este projeto é de uso privado ou interno, salvo autorização. Consulte o autor para fins comerciais.
