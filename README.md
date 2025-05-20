@@ -10,7 +10,7 @@ O **AutoWhats** é uma aplicação desenvolvida em Python com interface gráfica
    
    Certifique-se de ter o Python 3 instalado e execute:
 
-   pip install selenium tkinter sqlite3 
+   ```pip install selenium tkinter sqlite3```
 
    
 3. **Configure o WebDriver:**
