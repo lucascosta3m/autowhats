@@ -29,22 +29,22 @@ O **AutoWhats** é uma aplicação desenvolvida em Python com interface gráfica
 
 A base de dados utilizada é um arquivo SQLite chamado ``contatos.db``. Se não existir, ele é automaticamente criado na primeira execução, contendo a tabela:
 
-``sql``
+```sql
 
-CREATE TABLE contatos (
+   CREATE TABLE contatos (
 
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+       id INTEGER PRIMARY KEY AUTOINCREMENT,
     
-    cidade TEXT,
+       cidade TEXT,
     
-    nome TEXT,
+       nome TEXT,
     
-    telefone TEXT,
+       telefone TEXT,
     
-    mensagem TEXT
+       mensagem TEXT
     
-);
-
+)
+```
 
 ## 📇 Formato dos Contatos
 ### Telefone: Deve estar no formato internacional sem espaços ou símbolos, por exemplo:
