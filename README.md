@@ -11,6 +11,7 @@ O **AutoWhats** é uma aplicação desenvolvida em Python com interface gráfica
    Certifique-se de ter o Python 3 instalado e execute:
 
    ```bash
+   
    pip install selenium tkinter sqlite3
    ```
 
@@ -25,6 +26,7 @@ O **AutoWhats** é uma aplicação desenvolvida em Python com interface gráfica
    Basta rodar o arquivo .py para abrir a interface:
    
    ```bash
+   
    python autowhats.py
    ```
 
@@ -93,6 +95,7 @@ A automação depende da estabilidade da interface do WhatsApp Web. Pequenas mud
 Execute o script principal com o Python:
 
    ```bash
+
    python autowhats.py
 ```
 
